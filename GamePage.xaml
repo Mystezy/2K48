@@ -1,0 +1,96 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:_2K48"
+      xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="_2K48.GamePage"
+      mc:Ignorable="d" 
+      d:DesignHeight="640" d:DesignWidth="412"
+      Title="GamePage" KeyDown="Page_KeyDown" Focusable="True" x:Name="Game">
+
+    <Page.Resources>
+
+        <SolidColorBrush x:Key="GameBoardBackgroundColorBrush" Color="#BBADA0" />
+
+        <System:Double x:Key="GameBoardHeight">350</System:Double>
+
+        <Style x:Key="GameBoardGridBorderStyle" TargetType="{x:Type Border}">
+            <Setter Property="Background" Value="{StaticResource GameBoardBackgroundColorBrush}" />
+            <Setter Property="Height" Value="{DynamicResource GameBoardHeight}" />
+            <Setter Property="Width" Value="{DynamicResource GameBoardHeight}" />
+            <Setter Property="CornerRadius" Value="5" />
+            <Setter Property="Padding" Value="5" />
+        </Style>
+        <System:String x:Key="GameText">Game</System:String>
+    </Page.Resources>
+
+    <Grid x:Name="Grid" Focusable="True"  KeyDown="Page_KeyDown">
+        <Border Margin="0,189,0,32" Style="{StaticResource GameBoardGridBorderStyle}" Width="Auto" Height="Auto" Focusable="False"  KeyDown="Page_KeyDown">
+            <Grid x:Name="Grid2" ShowGridLines="False" Margin="-5" Focusable="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image x:Name ="Im1" Grid.Column="0" Grid.Row="0" Margin="2"/>
+                <Image x:Name ="Im2" Grid.Column="1" Grid.Row="0" Margin="2"/>
+                <Image x:Name ="Im3" Grid.Column="2" Grid.Row="0" Margin="2"/>
+                <Image x:Name ="Im4" Grid.Column="3" Grid.Row="0" Margin="2"/>
+                <Image x:Name ="Im5" Grid.Column="0" Grid.Row="1" Margin="2"/>
+                <Image x:Name ="Im6" Grid.Column="1" Grid.Row="1" Margin="2"/>
+                <Image x:Name ="Im7" Grid.Column="2" Grid.Row="1" Margin="2"/>
+                <Image x:Name ="Im8" Grid.Column="3" Grid.Row="1" Margin="2"/>
+                <Image x:Name ="Im9" Grid.Column="0" Grid.Row="2" Margin="2"/>
+                <Image x:Name ="Im10" Grid.Column="1" Grid.Row="2" Margin="2"/>
+                <Image x:Name ="Im11" Grid.Column="2" Grid.Row="2" Margin="2"/>
+                <Image x:Name ="Im12" Grid.Column="3" Grid.Row="2" Margin="2"/>
+                <Image x:Name ="Im13" Grid.Column="0" Grid.Row="3" Margin="2"/>
+                <Image x:Name ="Im14" Grid.Column="1" Grid.Row="3" Margin="2"/>
+                <Image x:Name ="Im15" Grid.Column="2" Grid.Row="3" Margin="2"/>
+                <Image x:Name ="Im16" Grid.Column="3" Grid.Row="3" Margin="2"/>
+
+                <TextBox x:Name="tb1" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" TextAlignment="Center" Height="71" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="103" Background="Transparent" BorderBrush="Transparent" FontFamily="Helvetica" FontSize="20" Margin="0,34,0,0" IsEnabled="False" FontWeight="Bold"/>
+                <TextBox x:Name="tb2" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" TextAlignment="Center" Height="71" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" Background="Transparent" BorderBrush="Transparent" FontFamily="Helvetica" FontSize="20" Margin="0,34,0,0" IsEnabled="False" FontWeight="Bold"/>
+                <TextBox x:Name="tb3" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" TextAlignment="Center" Height="71" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" Background="Transparent" BorderBrush="Transparent" FontFamily="Helvetica" FontSize="20" Margin="0,34,0,0" IsEnabled="False" FontWeight="Bold"/>
+                <TextBox x:Name="tb4" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" TextAlignment="Center" Height="71" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" Background="Transparent" BorderBrush="Transparent" FontFamily="Helvetica" FontSize="20" Margin="0,34,0,0" IsEnabled="False" FontWeight="Bold"/>
+                <TextBox x:Name="tb5" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" TextAlignment="Center" Height="71" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" Background="Transparent" BorderBrush="Transparent" FontFamily="Helvetica" FontSize="20" Margin="0,34,0,0" IsEnabled="False" FontWeight="Bold"/>
+                <TextBox x:Name="tb6" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" TextAlignment="Center" Height="71" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" Background="Transparent" BorderBrush="Transparent" FontFamily="Helvetica" FontSize="20" Margin="0,34,0,0" IsEnabled="False" FontWeight="Bold"/>
+                <TextBox x:Name="tb7" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" TextAlignment="Center" Height="71" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" Background="Transparent" BorderBrush="Transparent" FontFamily="Helvetica" FontSize="20" Margin="0,34,0,0" IsEnabled="False" FontWeight="Bold"/>
+                <TextBox x:Name="tb8" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" TextAlignment="Center" Height="71" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" Background="Transparent" BorderBrush="Transparent" FontFamily="Helvetica" FontSize="20" Margin="0,34,0,0" IsEnabled="False" FontWeight="Bold"/>
+                <TextBox x:Name="tb9" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" TextAlignment="Center" Height="71" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" Background="Transparent" BorderBrush="Transparent" FontFamily="Helvetica" FontSize="20" Margin="0,34,0,0" IsEnabled="False" FontWeight="Bold"/>
+                <TextBox x:Name="tb10" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" TextAlignment="Center" Height="71" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" Background="Transparent" BorderBrush="Transparent" FontFamily="Helvetica" FontSize="20" Margin="0,34,0,0" IsEnabled="False" FontWeight="Bold"/>
+                <TextBox x:Name="tb11" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" TextAlignment="Center" Height="71" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" Background="Transparent" BorderBrush="Transparent" FontFamily="Helvetica" FontSize="20" Margin="0,34,0,0" IsEnabled="False" FontWeight="Bold"/>
+                <TextBox x:Name="tb12" Grid.Column="3" Grid.Row="2" HorizontalAlignment="Center" TextAlignment="Center" Height="71" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" Background="Transparent" BorderBrush="Transparent" FontFamily="Helvetica" FontSize="20" Margin="0,34,0,0" IsEnabled="False" FontWeight="Bold"/>
+                <TextBox x:Name="tb13" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" TextAlignment="Center" Height="71" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" Background="Transparent" BorderBrush="Transparent" FontFamily="Helvetica" FontSize="20" Margin="0,34,0,0" IsEnabled="False" FontWeight="Bold"/>
+                <TextBox x:Name="tb14" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" TextAlignment="Center" Height="71" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" Background="Transparent" BorderBrush="Transparent" FontFamily="Helvetica" FontSize="20" Margin="0,34,0,0" IsEnabled="False" FontWeight="Bold"/>
+                <TextBox x:Name="tb15" Grid.Column="2" Grid.Row="3" HorizontalAlignment="Center" TextAlignment="Center" Height="71" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" Background="Transparent" BorderBrush="Transparent" FontFamily="Helvetica" FontSize="20" Margin="0,34,0,0" IsEnabled="False" FontWeight="Bold"/>
+                <TextBox x:Name="tb16" Grid.Column="3" Grid.Row="3" HorizontalAlignment="Center" TextAlignment="Center" Height="71" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" Background="Transparent" BorderBrush="Transparent" FontFamily="Helvetica" FontSize="20" Margin="0,34,0,0" IsEnabled="False" FontWeight="Bold"/>
+                
+            </Grid>
+        </Border>
+
+        <Button x:Name ="NewGame" HorizontalAlignment="Left" Margin="95,109,0,0" VerticalAlignment="Top" Width="57" Height="57" Style="{StaticResource SmallButtonStyle}" Click="NewGame_Click" Focusable= "False">
+            <Image x:Name="NewGameIm" Height="57" Width="57" Source= "D:\2048\2K48\Images\repeat.png"/>
+        </Button>
+
+        <Button x:Name="MainMenuButton" HorizontalAlignment="Left" Margin="20,109,0,0" VerticalAlignment="Top" Width="57" Height="57" Style="{StaticResource SmallButtonStyle}" Click="MainMenuButton_Click" Focusable= "False">
+            <Image x:Name="MainMenuIm" Height="57" Width="57" Source= "D:\2048\2K48\Images\menu.png"/>
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="169,107,0,0" VerticalAlignment="Top" Width="100" Height="57" Style="{StaticResource BigButtonStyle}" IsEnabled="False" Background="#FFB8A694">
+            <TextBox x:Name ="Score" Margin="0,-5,0,0" Height="57" Text="Score" TextWrapping = "Wrap" Width="100" Background="Transparent" RenderTransformOrigin="0.5,0.5" TextAlignment="Center" FontWeight="Bold"/>
+        </Button>
+
+        <Button HorizontalAlignment="Left" Margin="288,107,0,0" VerticalAlignment="Top" Width="100" Height="57" Style="{StaticResource BigButtonStyle}" IsEnabled="False" Background="#FFB8A694">
+            <TextBox x:Name="Best" Margin="0,-5,0,0" Height="57" Text="Best" TextWrapping = "Wrap" Width="100" Background="Transparent" RenderTransformOrigin="0.5,0.5" TextAlignment="Center"/>
+        </Button>
+    </Grid>
+</Page>

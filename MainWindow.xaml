@@ -1,0 +1,16 @@
+﻿<Window x:Class="_2K48.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2K48"
+        mc:Ignorable="d"
+        Title="2K48, bitch" Height="640" Width="412" 
+        Background="#FAF8EF" MinHeight="640" MinWidth="412"
+        MaxHeight="640" MaxWidth="412"
+        Icon ="D:\2048\2K48\Images\2048.png"  x:Name = "MyIcon" Focusable="False" Loaded="Window_Loaded">
+    <Grid>
+        <Frame x:Name="MainWindowFrame" NavigationUIVisibility="Hidden" Source="MainMenuPage.xaml"/>
+    </Grid>
+
+</Window>
