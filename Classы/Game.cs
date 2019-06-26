@@ -131,57 +131,6 @@ namespace _2K48.Classы
 
         public void RightMove()
         {
-            /*for (int i = 0; i < 4; i++)
-            {
-                int j = 3;
-                while (j > -1)
-                {
-                    if (Board[i, j].Count != 0)
-                    {
-                        int Time = Board[i, j].Count;
-                        int iPos = i;
-                        int jPos = j;
-                        while (j > -1)
-                        {
-                            if (j != 0)
-                            {
-                                j--;
-                                if (Board[i, j].Count == Time)
-                                {
-                                    Board[iPos, jPos].GetImage(Board[iPos, jPos].Count * 2);
-                                    Score += Board[iPos, jPos].Count;
-                                    Board[i, j].GetImage(0);
-                                }
-                                else if (Board[i, j].Count == 0) { }
-                                else
-                                {
-                                    j++;
-                                    break;
-                                }
-                            }
-                            else { break; }
-
-                        }
-                    }
-                    j--;
-                }
-            }
-            
-            for (int i = 0; i < 4; i++)
-            {
-                for (int j = 2; j > -1; j--)
-                {
-                    int k = j;
-                    while (Board[i, k + 1].Count == 0)
-                    {
-                        Board[i, k + 1].GetImage(Board[i, k].Count);
-                        Board[i, k].GetImage(0);
-                        if (k == 2) { break; }
-                        k++;
-                    }
-                }
-            }*/
-
             for (int i = 0; i < 4; i++)
             {
                 for (int j = 3; j >= 0; j--)
@@ -220,57 +169,6 @@ namespace _2K48.Classы
 
         public void LeftMove()
         {
-            /*for (int i = 0; i < 4; i++)
-            {
-                int j = 0;
-                while (j < 3)
-                {
-                    if (Board[i, j].Count != 0)
-                    {
-                        int Time = Board[i, j].Count;
-                        int iPos = i;
-                        int jPos = j;
-                        while (j < 4)
-                        {
-                            if (j != 3)
-                            {
-                                j++;
-                                if (Board[i, j].Count == Time)
-                                {
-                                    Board[iPos, jPos].GetImage(Board[iPos, jPos].Count * 2);
-                                    Score += Board[iPos, jPos].Count;
-                                    Board[i, j].GetImage(0);
-                                }
-                                else if (Board[i, j].Count == 0) { }
-                                else
-                                {
-                                    j--;
-                                    break;
-                                }
-                            }
-                            else { break; }
-
-                        }
-                    }
-                    j++;
-                }
-            }
-
-            for (int i = 0; i < 4; i++)
-            {
-                for (int j = 1; j < 4; j++)
-                {
-                    int k = j;
-                    while (Board[i, k - 1].Count == 0)
-                    {
-                        Board[i, k - 1].GetImage(Board[i, k].Count);
-                        Board[i, k].GetImage(0);
-                        if (k - 1 == 0) { break; }
-                        k--;
-                    }
-                }
-            }*/
-
             for (int i = 0; i < 4; i++)
             {
                 for (int j = 0; j < 4; j++)
@@ -309,57 +207,6 @@ namespace _2K48.Classы
 
         public void UpMove()
         {
-            /*for (int i = 0; i < 4; i++)
-            {
-                int j = 0;
-                while (j < 3)
-                {
-                    if (Board[j, i].Count != 0)
-                    {
-                        int Time = Board[j, i].Count;
-                        int iPos = j;
-                        int jPos = i;
-                        while (j < 4)
-                        {
-                            if (j != 3)
-                            {
-                                j++;
-                                if (Board[j, i].Count == Time)
-                                {
-                                    Board[iPos, jPos].GetImage(Board[iPos, jPos].Count * 2);
-                                    Score += Board[iPos, jPos].Count;
-                                    Board[j, i].GetImage(0);
-                                }
-                                else if (Board[j, i].Count == 0) { }
-                                else
-                                {
-                                    j--;
-                                    break;
-                                }
-                            }
-                            else { break; }
-
-                        }
-                    }
-                    j++;
-                }
-            }
-
-            for (int i = 0; i < 4; i++)
-            {
-                for (int j = 1; j < 4; j++)
-                {
-                    int k = j;
-                    while (Board[k - 1, i].Count == 0)
-                    {
-                        Board[k - 1, i].GetImage(Board[k, i].Count);
-                        Board[k, i].GetImage(0);
-                        if (k - 1 == 0) { break; }
-                        k--;
-                    }
-                }
-            }*/
-
             for (int j = 0; j < 4; j++)
             {
                 for (int i = 0; i < 4; i++)
@@ -398,57 +245,6 @@ namespace _2K48.Classы
 
         public void DownMove()
         {
-            /*for (int i = 0; i < 4; i++)
-            {
-                int j = 3;
-                while (j > -1)
-                {
-                    if (Board[j, i].Count != 0)
-                    {
-                        int Time = Board[j, i].Count;
-                        int iPos = j;
-                        int jPos = i;
-                        while (j > -1)
-                        {
-                            if (j != 0)
-                            {
-                                j--;
-                                if (Board[j, i].Count == Time)
-                                {
-                                    Board[iPos, jPos].GetImage(Board[iPos, jPos].Count * 2);
-                                    Score += Board[iPos, jPos].Count;
-                                    Board[j, i].GetImage(0);
-                                }
-                                else if (Board[j, i].Count == 0) { }
-                                else
-                                {
-                                    j++;
-                                    break;
-                                }
-                            }
-                            else { break; }
-
-                        }
-                    }
-                    j--;
-                }
-            }
-
-            for (int i = 0; i < 4; i++)
-            {
-                for (int j = 2; j > -1; j--)
-                {
-                    int k = j;
-                    while (Board[k + 1, i].Count == 0)
-                    {
-                        Board[k + 1, i].GetImage(Board[k, i].Count);
-                        Board[k, i].GetImage(0);
-                        if (k == 2) { break; }
-                        k++;
-                    }
-                }
-            }*/
-
             for (int j = 0; j < 4; j++)
             {
                 for (int i = 3; i >= 0; i--)

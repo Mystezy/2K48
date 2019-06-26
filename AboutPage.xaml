@@ -10,9 +10,9 @@
 
     <Grid>
         <Button x:Name="MainMenuButton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="57" Height="57" Style="{StaticResource SmallButtonStyle}" Click="MainMenuButton_Click">
-            <Image Height="57" Width="57" Source= "D:\2048\2K48\Images\menu.png"/>
+            <Image x:Name="MainMenu" Height="57" Width="57"/>
         </Button>
-        <Label Content="Выполнено Пал Санычем&#xA;special uchebnaya practice&#xA;and OOP&#xD;&#xA;&#xD;&#xA;Цель: Собрать игровой кубик суммой&#xD;&#xA;2048.&#xD;&#xA;&#xD;&#xA;Правила: разрешены движения&#xD;&#xA;игрового поля вверх, вниз, право и&#xD;&#xA;влево. Стоящие на одной линии&#xD;&#xA;движения одинаковые кубики&#xD;&#xA;стакаются, остальные смещаются по&#xD;&#xA;направлению игрового поля.&#xD;&#xA;&#xD;&#xA;Управление:&#xD;&#xA;W - движение игрового поля вверх&#xD;&#xA;A - движение игрового поля влево&#xD;&#xA;S - движение игрового поля вниз&#xD;&#xA;D - движение игрового поля вправо&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Helvetica" FontSize="20" Width="392" Height="487"/>
+        <Label Content="Выполнено Пал Санычем&#xA;special uchebnaya practice&#xA;and OOP&#xD;&#xA;&#xD;&#xA;Цель: Собрать игровой кубик суммой&#xD;&#xA;2048.&#xD;&#xA;&#xD;&#xA;Правила: разрешены движения&#xD;&#xA;игрового поля вверх, вниз, вправо и&#xD;&#xA;влево. Стоящие на одной линии&#xD;&#xA;движения одинаковые кубики&#xD;&#xA;стакаются, остальные смещаются по&#xD;&#xA;направлению игрового поля.&#xD;&#xA;&#xD;&#xA;Управление:&#xD;&#xA;W - движение игрового поля вверх&#xD;&#xA;A - движение игрового поля влево&#xD;&#xA;S - движение игрового поля вниз&#xD;&#xA;D - движение игрового поля вправо&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Helvetica" FontSize="20" Width="392" Height="487"/>
         <Label Content="All rights restrved" HorizontalAlignment="Left" Margin="124,567,0,-1" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Helvetica" FontSize="20" Height="74"/>
 
     </Grid>

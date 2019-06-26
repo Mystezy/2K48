@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-D:\2048\2K48\obj\Debug\
+E:\2048\2K48\obj\Debug\
 _2K48
 none
 false
 DEBUG;TRACE
-D:\2048\2K48\App.xaml
+E:\2048\2K48\App.xaml
 6794940802
 
-16-439651334
+14-2128226958
 131569487696
 AboutPage.xaml;GamePage.xaml;LosePage.xaml;MainMenuPage.xaml;MainWindow.xaml;WinPage.xaml;
 

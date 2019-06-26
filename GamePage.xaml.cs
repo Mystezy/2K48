@@ -26,6 +26,7 @@ namespace _2K48
         public GamePage()
         {
             InitializeComponent();
+            Initialize();
             MyGame = new Game();
             MyGame.LoadGame();
             Painter();
@@ -71,12 +72,6 @@ namespace _2K48
             int[,] Board = new int[4, 4];
             switch (e.Key)
             {
-                case Key.Right:
-                    Mass(ref Board);
-                    MyGame.RightMove();
-                    if (CheckBoard(Board))
-                        MyGame.Randomize();
-                    break;
                 case Key.D:
                     Mass(ref Board);
                     MyGame.RightMove();
@@ -84,12 +79,6 @@ namespace _2K48
                         MyGame.Randomize();
                     break;
 
-                case Key.Left:
-                    Mass(ref Board);
-                    MyGame.LeftMove();
-                    if (CheckBoard(Board))
-                        MyGame.Randomize();
-                    break;
                 case Key.A:
                     Mass(ref Board);
                     MyGame.LeftMove();
@@ -97,12 +86,6 @@ namespace _2K48
                         MyGame.Randomize();
                     break;
 
-                case Key.Down:
-                    Mass(ref Board);
-                    MyGame.DownMove();
-                    if (CheckBoard(Board))
-                        MyGame.Randomize();
-                    break;
                 case Key.S:
                     Mass(ref Board);
                     MyGame.DownMove();
@@ -110,12 +93,6 @@ namespace _2K48
                         MyGame.Randomize();
                     break;
 
-                case Key.Up:
-                    Mass(ref Board);
-                    MyGame.UpMove();
-                    if (CheckBoard(Board))
-                        MyGame.Randomize();
-                    break;
                 case Key.W:
                     Mass(ref Board);
                     MyGame.UpMove();
@@ -177,6 +154,22 @@ namespace _2K48
                     Board[i, j] = MyGame.Board[i, j].Count;
                 }
             }
+        }
+
+        public void Initialize()
+        {
+            Classы.Path Str = new Classы.Path();
+            Str.GetPath(-3);
+            string path = Str.Str;
+            var uriImageSource = new Uri(path, UriKind.RelativeOrAbsolute);
+            BitmapImage Image = new BitmapImage(uriImageSource);
+            MainMenuIm.Source = Image;
+
+            Str.GetPath(-4);
+            path = Str.Str;
+            uriImageSource = new Uri(path, UriKind.RelativeOrAbsolute);
+            Image = new BitmapImage(uriImageSource);
+            NewGameIm.Source = Image;
         }
     }
 }

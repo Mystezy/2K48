@@ -78,11 +78,11 @@
         </Border>
 
         <Button x:Name ="NewGame" HorizontalAlignment="Left" Margin="95,109,0,0" VerticalAlignment="Top" Width="57" Height="57" Style="{StaticResource SmallButtonStyle}" Click="NewGame_Click" Focusable= "False">
-            <Image x:Name="NewGameIm" Height="57" Width="57" Source= "D:\2048\2K48\Images\repeat.png"/>
+            <Image x:Name="NewGameIm" Height="57" Width="57"/>
         </Button>
 
         <Button x:Name="MainMenuButton" HorizontalAlignment="Left" Margin="20,109,0,0" VerticalAlignment="Top" Width="57" Height="57" Style="{StaticResource SmallButtonStyle}" Click="MainMenuButton_Click" Focusable= "False">
-            <Image x:Name="MainMenuIm" Height="57" Width="57" Source= "D:\2048\2K48\Images\menu.png"/>
+            <Image x:Name="MainMenuIm" Height="57" Width="57" />
         </Button>
 
         <Button HorizontalAlignment="Left" Margin="169,107,0,0" VerticalAlignment="Top" Width="100" Height="57" Style="{StaticResource BigButtonStyle}" IsEnabled="False" Background="#FFB8A694">

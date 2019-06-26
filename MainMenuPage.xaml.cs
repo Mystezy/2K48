@@ -21,8 +21,6 @@ namespace _2K48
     /// </summary>
     public partial class MainMenuPage : Page
     {
-        public Game Now;
-
         public MainMenuPage()
         {
             InitializeComponent();

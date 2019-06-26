@@ -20,6 +20,12 @@ namespace _2K48.Classы
             S += "Images\\";
             switch (Count)
             {
+                case -4:
+                    S += "repeat.png";
+                    break;
+                case -3:
+                    S += "menu.png";
+                    break;
                 case -2:
                     S += "LeaderBoard.txt";
                     break;

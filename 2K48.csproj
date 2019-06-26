@@ -55,8 +55,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Classы\Leaders.cs" />
-    <Compile Include="Classы\Player.cs" />
     <Compile Include="WinPage.xaml.cs">
       <DependentUpon>WinPage.xaml</DependentUpon>
     </Compile>

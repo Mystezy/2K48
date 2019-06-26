@@ -8,7 +8,7 @@
         Title="2K48, bitch" Height="640" Width="412" 
         Background="#FAF8EF" MinHeight="640" MinWidth="412"
         MaxHeight="640" MaxWidth="412"
-        Icon ="D:\2048\2K48\Images\2048.png"  x:Name = "MyIcon" Focusable="False" Loaded="Window_Loaded">
+        Icon ="E:\2048\2K48\Images\2048.png"  x:Name = "MyIcon" Focusable="False" Loaded="Window_Loaded">
     <Grid>
         <Frame x:Name="MainWindowFrame" NavigationUIVisibility="Hidden" Source="MainMenuPage.xaml"/>
     </Grid>
